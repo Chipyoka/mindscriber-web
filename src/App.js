@@ -10,6 +10,7 @@ function App() {
 	return (
 		<div className="App">
 			<div>
+				{/* Components rendered below */}
 				<Header />
 				<GuideSection />
 				<DevSection />

@@ -7,7 +7,7 @@ function Navbar() {
 	const [topText, setTopText] = useState("Mindscriber Version 1.0.0...");
 	useEffect(() => {
 		const interval = setInterval(() => {
-			//Array of dashboard aniamted toptexts
+			//Array of animated toptexts
 			const texts = [
 				"Installer for MacOS and Linux comming soon...",
 				"Developed by The Blackgeek...",
