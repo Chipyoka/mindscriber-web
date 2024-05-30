@@ -1,5 +1,4 @@
 import React from "react";
-import Join from "./Join.svg";
 
 function DevSection() {
 	return (
@@ -11,19 +10,13 @@ function DevSection() {
 					</aside>
 					<aside className=" dev-text col-sm-5">
 						<p>
-							Mindscriber is a non-funded project which started as a passion project in
-							order to get conversant with <code>ElectronJs</code> in building desktop
-							applications. It has been a funny ride seeing it grow from scratch to one
-							functional app.
+							Mindscriber is an ongoing project which started as a passion project in
+							order to get conversant with ElectronJs in building desktop
+							applications. We need your technical expertise to make it better.
 						</p>
 
 						<div>
-							<button className="btn btn-success">
-								<span className="icon">
-									<img src={Join} alt="" />
-								</span>{" "}
-								Become A Collaborator
-							</button>
+							<button className="btn btn-success">Become A Collaborator</button>
 						</div>
 					</aside>
 				</section>

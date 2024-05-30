@@ -17,33 +17,22 @@ function Footer() {
 				<div className="row">
 					<aside className="about ">
 						<p>
-							<span className="salute">THE BLACKGEEK</span>
-							<br />A software developer experienced in developing modern and efficient Web
-							and Desktop application. As a way to learn <code>ElectronJS</code>, <br className="sm"/>
-							he embarked on a journey of creating this amazing desktop application. Get in
-							touch with
-							<br className="sm" /> him for collaborations and possible hire.
+							<span className="salute">MINDSCRIBER</span>
+							<br />A note taking desktop application that allows users to take notes and
+							save for later.
 							<br />
-							<code>Happy Note Taking !</code>
+							Happy Note Taking !
 						</p>
 						<div className="nav-link">
 							<ul>
 								<li>
-									<button>Repository</button>
-								</li>
-								<li>
-									<button>ReadMe</button>
-								</li>
-								<li>
-									<button>License</button>
+									<button>Documentaion</button>
 								</li>
 							</ul>
 						</div>
 					</aside>
 
-					<h6 className="copyright">
-						All Rights Reserved &copy; {currentYear}. The Blackgeek
-					</h6>
+					<h6 className="copyright">All Rights Reserved &copy; {currentYear}. Mindscriber</h6>
 				</div>
 			</footer>
 		</>

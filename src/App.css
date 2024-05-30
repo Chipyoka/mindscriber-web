@@ -51,6 +51,12 @@ button.x, .git{
 button.x:hover, .git:hover, .version:hover{
   background-color: white !important;
   color: #3a7bd5 !important;
+ 
+}
+button.x:active, .git:active, .version:active{
+  background-color: white !important;
+  color: #3a7bd5 !important;
+  border-width: 2px;
 }
 code{
   color: #1456b3 !important;
@@ -67,6 +73,10 @@ code{
 
 .icon{
   margin-right: .5em;
+}
+
+.lg{
+  display: none;
 }
 
 
@@ -290,13 +300,14 @@ div.nav-link ul>li button:hover{
 
    section.header{
     /* border: 2px solid red; */
-    margin-top: 5.5em;
+    margin-top: 5em;
     margin-bottom: 2.0em;
     padding: .5em 2em;
 
    }
    section.header h2{
-    font-size: 2.8em;
+    font-size: 3em;
+    font-weight: 800;
     text-align: left;
    }
    section.header p{
@@ -306,6 +317,9 @@ div.nav-link ul>li button:hover{
 
    .sm{
     display: none;
+   }
+   .lg{
+    display: block;
    }
    .download{
     padding: 0em 6em 0em .5em;
@@ -358,7 +372,8 @@ div.nav-link ul>li button:hover{
     color: lightgrey;
    }
    footer code {
-    color: #31ac60 !important;
+    color: #000000 !important;
+    font-weight: 900;
   }
   }
   /* Media query for Medium screens */
@@ -380,6 +395,10 @@ div.nav-link ul>li button:hover{
    }
 
    .sm{
+    display: block;
+   }
+
+   .lg{
     display: block;
    }
    .download{

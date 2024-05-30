@@ -12,16 +12,16 @@ function GuideSection() {
 						Step One
 					</p>
 					<p>
-						Download the app either as
-						<code>installer</code> or as <code>Zip</code>.
+						Download the
+						<code> installer</code> by clicking the download button above.
 					</p>
 					<p className="h">
 						<span className="bullet">OO</span>
 						Step Two
 					</p>
 					<p>
-						Run the Installer and you will have the app installed. Look
-						for the <code>.exe</code> and create its shortcut for easy access.
+						Run the Installer and look for the installed app in start menu then create its
+						shortcut for easy access.
 					</p>
 					<p className="h">
 						<span className="bullet">OO</span>
@@ -31,8 +31,10 @@ function GuideSection() {
 					<p>And thats all, you're set for seamless note taking!</p>
 					<hr />
 					<h6>
-						If you face any <strong>problems</strong> kindly reach out to the developer
-						through the <code>GitHub Repo</code>.
+						<em>
+							If you face any <strong>problems</strong> kindly reach out to the developer
+							through the <code>GitHub Repo</code>.
+						</em>
 					</h6>
 				</aside>
 				<aside className="guide-image col-md-5">

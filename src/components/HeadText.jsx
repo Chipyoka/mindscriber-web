@@ -11,10 +11,14 @@ function Header() {
 					<h2 className="fade-in">
 						Note Taking Made <span>Seamlessly </span>
 					</h2>
-					<p>
+					<p className="lg">
 						Ideas, thoughts or plans won't slip and be forgotten when you have no piece of
-						<br className="sm" />
-						paper of phone nearby, Use can take notes on your computer now !
+						paper or phone nearby, You can take notes on your computer now !
+					</p>
+					<p className="sm">
+						Ideas, thoughts or plans won't slip and be forgotten when you have no piece of
+						<br />
+						paper or phone nearby, You can take notes on your computer now !
 					</p>
 					<div className="download row">
 						<button className="btn btn-primary">
@@ -24,7 +28,7 @@ function Header() {
 							Download Installer
 						</button>
 						<p className="text-left">
-							<code>Download available only for Windows 10 x64 Bit</code> <br />
+							<code>for Windows 10 x64 Bit Only</code> <br />
 						</p>
 					</div>
 				</section>
