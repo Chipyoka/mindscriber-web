@@ -9,9 +9,7 @@ import React from "react";
 function App() {
 	return (
 		<div className="App">
-			<div>
-				<p className="top-line">Mindscriber will be made Open-source Soon !</p>
-			</div>
+			
 			<div>
 				<Header />
 				<GuideSection />

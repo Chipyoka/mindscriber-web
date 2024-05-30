@@ -4,7 +4,7 @@
 /*///////////////////////////////////////////////////////////////*/
 /* General Styles*/
 body{
-  background-color:rgb(243, 245, 255) !important;
+  background-color:rgb(247, 249, 255) !important;
   color:rgb(59, 59, 59);
   padding: 0;
   font-family: Arial, sans-serif;
@@ -13,10 +13,9 @@ body{
 
 .App {
   text-align: center;
-  padding: 0;
   align-items: center;
   justify-content: center;
-  padding: 3em;
+  /* padding: 0em 3em; */
 }
 
 .center-container {
@@ -28,50 +27,170 @@ body{
   padding: 0px;
 }
 
+
 h1{
     color:  rgb(94, 248, 164);
 }
 
+.btn-primary{
+  background-color: #3a7bd5 !important;
+}
+.btn-success{
+  border: none !important;
+  background-color: #31ac60 !important;
+}
+.btn-success:hover{
+  background-color: #299754 !important;
+}
+.btn-primary:hover{
+  background-color: #1456b3 !important;
+}
 
+code{
+  color: #1456b3 !important;
+  font-weight: 800 !important;
+}
 
+.bullet{
+  background-color:#31ac60;
+  color:#31ac60;
+  width: 15px;
+  margin-right: .5em;
+  
+}
 /*///////////////////////////////////////////////////////////////*/
-/* Styling for Navbarr*/
+/* Styling for Navbar and Header*/
 .top-line{
-  font-size: .65em;
-  background-color: grey;
+  font-size: .75em;
+  /* background-color: #3a7bd5; */
   color: white;
+  padding: .5em;
+}
+
+.top-bg{
+  background: linear-gradient(to right, #00ff62,#3a7bd5, #3a7bd5);
 }
 
 .logo{
   font-size: 1.5em;
   font-weight: 900;
-  color: rgb(71, 118, 248);
+  color: #3a7bd5;
+}
+.version{
+  padding: .35em 3em !important;
+  margin-right: 1em;
 }
 
+/* Header */
+section.header{
+  margin-top: 8em;
+  margin-bottom: 5em;
+}
+section.header h2{
+  font-size: 3em;
+  font-weight: 700;
 
+}
+ div.download{
+  justify-content: space-between;
+
+ }
+ .download button{
+  margin: 1em .5em;
+ 
+ }
+
+ .fade-in{
+  background: linear-gradient(to right, #00ff62, #3a7bd5, #00ff55); /* Light blue to green */
+  background-size: 200% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: fadeIn 5s linear infinite alternate;
+
+}
+
+@keyframes fadeIn{
+  0% {
+    background-position: 0% 50%;
+
+  }
+  100% {
+    background-position: 100% 50%;
+
+  }
+}
 /*///////////////////////////////////////////////////////////////*/
 /* Styling for Guide Section*/
 
 section.guide {
   margin-top: 3em;
-  padding: 3em 1em;
+  padding: 10em 5em;
+  border-radius: 1.5em;
   background-color: rgb(209, 209, 252);
-  justify-content: space-between;
+  justify-content: center;
+}
+section.guide aside {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+aside.steps  {
+  margin-right: 5em;
+}
+.steps h5 {
+  font-size: 2em;
+  text-align: left;
+  margin-bottom: .5em;
+
+}
+.steps h6 {
+  text-align: left;
+  margin-top: 1em;
+  margin-bottom: .5em;
+
 }
 
+.steps p{
+  margin: .5em 0em;
+  text-align: left;
+  font-size: .85em;
+}
+p.h{
+  font-size: .9em;
+  font-weight: 700;
+  margin-top: 1em;
+}
 aside.guide-image{
   background-color: white;
+  border-radius: 1.5em;
 }
 
 /*///////////////////////////////////////////////////////////////*/
 /* Styling for Dev Section*/
 
 section.dev {
-  margin-top: 3em;
-  padding: 3em 1em;
-  background-color: rgb(250, 250, 250);
-  justify-content: space-between;
+  margin: 3em 10em;
+  padding: 2em .5em;
+  background-color: white;
+  justify-content: center;
 
+}
+
+section.dev aside{
+  margin: 0em;
+}
+
+aside.dev-hero-text {
+  border-left: 10px solid #31ac60 ;
+}
+.dev-hero-text h3{
+  font-size: 3em;
+  text-align: left;
+}
+
+.dev-text{
+  font-size: .85em;
+  text-align: left;
+  margin-left: 1em;
 }
 
 /*///////////////////////////////////////////////////////////////*/
@@ -81,21 +200,334 @@ footer {
   margin-top: 3em;
   padding: 3em 1em;
   background-color: grey;
-  justify-content: space-between;
+  justify-content: center;
 }
+
+.salute{
+  font-weight: 800;
+  font-size: .9em;
+}
+
+footer code {
+  color: lightgray !important;
+}
+
+aside.about{
+
+  margin-left: 5em;
+}
+aside.about p {
+  text-align: left;
+  font-size: .85em;;
+  
+}
+div.nav-link{
+  margin: 0em !important;
+}
+div.nav-link ul{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0em;
+  padding:0em;
+}
+
+div.nav-link ul>li{
+  margin-right: 1em;
+  list-style: none;
+}
+div.nav-link ul>li button{
+  border-radius: .3em;
+  background-color: gray;
+  border: lightgray solid 2px;
+  color: lightgray;
+}
+div.nav-link ul>li button:hover{
+  border-radius: .3em;
+  background-color: rgb(116, 115, 115);
+  border: lightgray solid 2px;
+  color: lightgray;
+}
+
+.copyright{
+  font-size: .8em;
+}
+
   /* Media query for small screens */
 
-    @media (max-width: 480px) {
-   body{
-    background-color: antiquewhite;
+    @media (max-width: 450px) {
+  .navbar{
+    margin: 0rem .5em;
+    padding: 0em !important;
+    /* border: 2px solid red; */
+    align-items: baseline !important;
+    background-color: white !important;
+    /* z-index: -1; */
+    
+  }
+   .version{
+    display: none !important;
+   }
+   .logo{
+    font-size: 1.4em;
+    margin: .1em 0em .1em 0em;
+     /* border: 2px solid red; */
+   }
+
+   /* header */
+
+   section.header{
+    /* border: 2px solid red; */
+    margin-top: 6.5em;
+    margin-bottom: 4.5em;
+    padding: .5em 2em;
+
+   }
+   section.header h2{
+    font-size: 2.2em;
+    text-align: left;
+   }
+   section.header p{
+    text-align: left;
+    font-size: .9em;
+   }
+
+   .sm{
+    display: none;
+   }
+   .download{
+    padding: 0em 6em 0em .5em;
+    margin-top: 2.5em !important;
+    margin-bottom: 0em !important;
+    /* border: 2px solid red; */
+    
+   }
+   .download button{
+    margin: .5em .1em;
+   }
+
+   /* guide section */
+
+   section.guide{
+    padding: 2em;
+    margin: 0em;
+   }
+   aside.steps{
+    /* border: green 2px solid; */
+    margin: 0em;
+   }
+   aside.guide-image{
+    /* border: green 2px solid; */
+    margin: 0em;
+    height: 200px;
+   }
+  
+   /* dev section */
+   section.dev{
+    margin: 1.5em 0em;
+    padding: 2em;
+   }
+
+   section.dev .dev-hero-text{
+    font-size: .8em;
+    margin-bottom: 1.5em;
+   }
+
+   /* footer */
+   footer{
+    margin: 0em;
+    padding: 2em;
+   }
+
+   footer .about{
+    /* border: 2px solid green; */
+    margin: 0em;
+    padding: 2.5em;
    }
   }
-  /* Media query for tablets */
-  @media (max-width: 997px) {
+  /* Media query for Medium screens */
+  @media (max-width: 768px) {
      
-    body{
-      background-color: antiquewhite;
+    .navbar{
+      margin: 0rem .5em;
+      padding: 0em !important;
+      /* border: 2px solid red; */
+      align-items: baseline !important;
+      background-color: white !important;
+      /* z-index: -1; */
+      
+    }
+     
+     .logo{
+      font-size: 1.8em;
+      margin: .1em 0em .1em 0em;
+       /* border: 2px solid red; */
+     }
+  
+     /* header */
+  
+     section.header{
+      /* border: 2px solid red; */
+      margin-top: 6.5em;
+      margin-bottom: 4.5em;
+      padding: .5em 2em;
+  
+     }
+     section.header h2{
+      font-size: 2.5em;
+      text-align: center;
+     }
+     section.header p{
+      text-align: center;
+      font-size: .95em;
+     }
+  
+   
+     .download{
+      padding: 0em 8em;
+      margin-top: 2.5em !important;
+      margin-bottom: 0em !important;
+      /* border: 2px solid red; */
+      
+     }
+     .download button{
+      margin: .5em .1em;
+     }
+  
+     /* guide section */
+  
+     section.guide{
+      padding: 2em;
+      margin: 0em;
+      
+     }
+     aside.steps{
+      /* border: green 2px solid; */
+      font-size: .8rem;
+      margin: 2em;
+     }
+     aside.steps h6{
+      font-size: .8rem;
+     }
+     aside.guide-image{
+      /* border: green 2px solid; */
+      margin: 0em;
+      height: 300px;
+     }
+    
+     /* dev section */
+     section.dev{
+      margin: 1.5em 0em;
+      padding: 2em;
+     }
+  
+     section.dev .dev-hero-text{
+      font-size: .8em;
+      margin-bottom: 1.5em;
+     }
+  
+     /* footer */
+     footer{
+      margin: 0em;
+      padding: 2em;
+     }
+  
+     footer .about{
+      /* border: 2px solid green; */
+      margin: 0em;
+      padding: 2.5em;
      }
 
   }
-
+  /* Media query for Medium large */
+  @media (max-width: 1026px) {
+     
+    .navbar{
+      margin: 0rem .5em;
+      padding: 0em !important;
+      /* border: 2px solid red; */
+      align-items: baseline !important;
+      background-color: white !important;
+      /* z-index: -1; */
+      
+    }
+     
+     .logo{
+      font-size: 1.8em;
+      margin: .1em 0em .1em 0em;
+       /* border: 2px solid red; */
+     }
+  
+     /* header */
+  
+     section.header{
+      /* border: 2px solid red; */
+      margin-top: 6.5em;
+      margin-bottom: 4.5em;
+      padding: .5em 2em;
+  
+     }
+     section.header h2{
+      font-size: 2.5em;
+      text-align: center;
+     }
+     section.header p{
+      text-align: center;
+      font-size: .95em;
+     }
+  
+   
+     .download{
+      padding: 0em 8em;
+      margin-top: 2.5em !important;
+      margin-bottom: 0em !important;
+      /* border: 2px solid red; */
+      
+     }
+     .download button{
+      margin: .5em .1em;
+     }
+  
+     /* guide section */
+  
+     section.guide{
+      padding: 2em;
+      margin: 0em;
+      
+     }
+     aside.steps{
+      /* border: green 2px solid; */
+      font-size: .8rem;
+      margin: 2em;
+     }
+     aside.steps h6{
+      font-size: .8rem;
+     }
+     aside.guide-image{
+      /* border: green 2px solid; */
+      margin: 0em;
+      height: 300px;
+     }
+    
+     /* dev section */
+     section.dev{
+      margin: 1.5em 0em;
+      padding: 2em;
+     }
+  
+     section.dev .dev-hero-text{
+      font-size: .8em;
+      margin-bottom: 1.5em;
+     }
+  
+     /* footer */
+     footer{
+      margin: 0em;
+      padding: 2em;
+     }
+  
+     footer .about{
+      /* border: 2px solid green; */
+      margin: 0em;
+      padding: 2.5em;
+     }
+    }

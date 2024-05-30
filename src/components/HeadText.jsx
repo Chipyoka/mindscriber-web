@@ -6,15 +6,16 @@ function Header() {
 		<>
 			<div>
 				<Navbar />
-				<section className="container">
-					<h2>
-						Taking <span>Notes </span> Made Way <br /> Easier Now
+				<section className="container header">
+					<h2 className="fade-in">
+						Note Taking Made <span >Seamlessly </span>
 					</h2>
 					<p>
 						Ideas, thoughts or plans won't slip and be forgotten when you have no piece of
+						<br className="sm"/>
 						paper of phone nearby, Use can take notes on your computer now !
 					</p>
-					<div>
+					<div className="download row">
 						<button className="btn btn-outline-primary">Download Installer</button>
 						<button className="btn btn-primary">Download ZIP</button>
 					</div>
