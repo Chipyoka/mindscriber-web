@@ -19,10 +19,10 @@ function Footer() {
 						<p>
 							<span className="salute">THE BLACKGEEK</span>
 							<br />A software developer experienced in developing modern and efficient Web
-							and Desktop application. As a way to learn <code>ElectronJS</code>, <br />
+							and Desktop application. As a way to learn <code>ElectronJS</code>, <br className="sm"/>
 							he embarked on a journey of creating this amazing desktop application. Get in
 							touch with
-							<br /> him for collaborations and possible hire.
+							<br className="sm" /> him for collaborations and possible hire.
 							<br />
 							<code>Happy Note Taking !</code>
 						</p>

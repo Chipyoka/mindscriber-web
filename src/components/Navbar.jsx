@@ -1,15 +1,18 @@
 import React, {useEffect, useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import LinkedIn from "./LinkedIn.svg";
+import Git from "./GitRepo.svg";
 
 function Navbar() {
-	const [topText, setTopText] = useState("From Dreams to Notes");
+	const [topText, setTopText] = useState("Mindscriber Version 1.0.0...");
 	useEffect(() => {
 		const interval = setInterval(() => {
 			//Array of dashboard aniamted toptexts
 			const texts = [
-				"Mindscriber is free...",
+				"Installer for MacOS and Linux comming soon...",
+				"Gladly developed by THE BLACKGEEK...",
 				"This project will become Open-source soon...",
-				"You can be come a contributor...",
+				"You can become a contributor...",
 			];
 
 			//get random value
@@ -18,7 +21,7 @@ function Navbar() {
 
 			//update toptext
 			setTopText(newText);
-		}, 10000);
+		}, 3000);
 		return () => clearInterval(interval);
 	}, []);
 
@@ -28,11 +31,17 @@ function Navbar() {
 				<p className="top-line">{topText}</p>
 			</div>
 			<div className="container">
-				<div className="navbar ">
-					<p className="logo"> Mindscriber</p>
+				<div className="navbar sticky-top">
+					<div><span className="logo">Mindscriber</span></div>
 					<div>
-						<button className="btn btn-primary version">V1.0.0</button>
-						<button className="btn btn-outline-secondary git">Git</button>
+						
+						<span  className="btn btn-outline-primary version">V 1.0.0 (Current)</span>
+						<button className="btn btn-outline-primary git">
+							<img src={Git} alt="" />
+						</button>
+						<button className="btn btn-outline-primary x">
+							<img src={LinkedIn} alt="" />
+						</button>
 					</div>
 				</div>
 			</div>

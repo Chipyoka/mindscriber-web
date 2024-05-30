@@ -1,17 +1,18 @@
 import React from "react";
+import Image from "./Image.svg";
 
 function GuideSection() {
 	return (
 		<>
 			<section className="guide row container-fluid py-3">
-				<aside className="steps col-sm-4">
+				<aside className="steps col-md-4">
 					<h5>Get Started Now!</h5>
 					<p className="h">
 						<span className="bullet">OO</span>
 						Step One
 					</p>
 					<p>
-						Select your operating system and download the app either as{" "}
+						Download the app either as
 						<code>installer</code> or as <code>Zip</code>.
 					</p>
 					<p className="h">
@@ -19,7 +20,7 @@ function GuideSection() {
 						Step Two
 					</p>
 					<p>
-						Run the Installer and you will have the app installed. For Zip, extract and look
+						Run the Installer and you will have the app installed. Look
 						for the <code>.exe</code> and create its shortcut for easy access.
 					</p>
 					<p className="h">
@@ -34,7 +35,9 @@ function GuideSection() {
 						through the <code>GitHub Repo</code>.
 					</h6>
 				</aside>
-				<aside className="guide-image col-sm-5"></aside>
+				<aside className="guide-image col-md-5">
+					<img src={Image} alt="" />
+				</aside>
 			</section>
 		</>
 	);

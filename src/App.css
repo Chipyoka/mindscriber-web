@@ -45,7 +45,13 @@ h1{
 .btn-primary:hover{
   background-color: #1456b3 !important;
 }
-
+button.x, .git{
+  margin: 0em .2em;
+}
+button.x:hover, .git:hover, .version:hover{
+  background-color: white !important;
+  color: #3a7bd5 !important;
+}
 code{
   color: #1456b3 !important;
   font-weight: 800 !important;
@@ -58,6 +64,12 @@ code{
   margin-right: .5em;
   
 }
+
+.icon{
+  margin-right: .5em;
+}
+
+
 /*///////////////////////////////////////////////////////////////*/
 /* Styling for Navbar and Header*/
 .top-line{
@@ -73,12 +85,13 @@ code{
 
 .logo{
   font-size: 1.5em;
-  font-weight: 900;
+  font-weight: 700;
   color: #3a7bd5;
+  font-family: Helvetica, sans-serif;
 }
 .version{
-  padding: .35em 3em !important;
-  margin-right: 1em;
+  padding: .35em 2em !important;
+  margin-right: .5em;
 }
 
 /* Header */
@@ -126,7 +139,7 @@ section.guide {
   margin-top: 3em;
   padding: 10em 5em;
   border-radius: 1.5em;
-  background-color: rgb(209, 209, 252);
+  background-color: rgb(199, 237, 255);
   justify-content: center;
 }
 section.guide aside {
@@ -209,7 +222,7 @@ footer {
 }
 
 footer code {
-  color: lightgray !important;
+  color: lightgrey !important;
 }
 
 aside.about{
@@ -254,13 +267,13 @@ div.nav-link ul>li button:hover{
 
   /* Media query for small screens */
 
-    @media (max-width: 450px) {
+    @media screen and (max-width: 767px) {
   .navbar{
     margin: 0rem .5em;
     padding: 0em !important;
     /* border: 2px solid red; */
     align-items: baseline !important;
-    background-color: white !important;
+    /* background-color: white !important; */
     /* z-index: -1; */
     
   }
@@ -277,13 +290,13 @@ div.nav-link ul>li button:hover{
 
    section.header{
     /* border: 2px solid red; */
-    margin-top: 6.5em;
-    margin-bottom: 4.5em;
+    margin-top: 5.5em;
+    margin-bottom: 2.0em;
     padding: .5em 2em;
 
    }
    section.header h2{
-    font-size: 2.2em;
+    font-size: 2.8em;
     text-align: left;
    }
    section.header p{
@@ -342,192 +355,100 @@ div.nav-link ul>li button:hover{
     /* border: 2px solid green; */
     margin: 0em;
     padding: 2.5em;
+    color: lightgrey;
    }
+   footer code {
+    color: #31ac60 !important;
+  }
   }
   /* Media query for Medium screens */
-  @media (max-width: 768px) {
-     
-    .navbar{
-      margin: 0rem .5em;
-      padding: 0em !important;
-      /* border: 2px solid red; */
-      align-items: baseline !important;
-      background-color: white !important;
-      /* z-index: -1; */
-      
-    }
-     
-     .logo{
-      font-size: 1.8em;
-      margin: .1em 0em .1em 0em;
-       /* border: 2px solid red; */
-     }
-  
-     /* header */
-  
-     section.header{
-      /* border: 2px solid red; */
-      margin-top: 6.5em;
-      margin-bottom: 4.5em;
-      padding: .5em 2em;
-  
-     }
-     section.header h2{
-      font-size: 2.5em;
-      text-align: center;
-     }
-     section.header p{
-      text-align: center;
-      font-size: .95em;
-     }
-  
-   
-     .download{
-      padding: 0em 8em;
-      margin-top: 2.5em !important;
-      margin-bottom: 0em !important;
-      /* border: 2px solid red; */
-      
-     }
-     .download button{
-      margin: .5em .1em;
-     }
-  
-     /* guide section */
-  
-     section.guide{
-      padding: 2em;
-      margin: 0em;
-      
-     }
-     aside.steps{
-      /* border: green 2px solid; */
-      font-size: .8rem;
-      margin: 2em;
-     }
-     aside.steps h6{
-      font-size: .8rem;
-     }
-     aside.guide-image{
-      /* border: green 2px solid; */
-      margin: 0em;
-      height: 300px;
-     }
-    
-     /* dev section */
-     section.dev{
-      margin: 1.5em 0em;
-      padding: 2em;
-     }
-  
-     section.dev .dev-hero-text{
-      font-size: .8em;
-      margin-bottom: 1.5em;
-     }
-  
-     /* footer */
-     footer{
-      margin: 0em;
-      padding: 2em;
-     }
-  
-     footer .about{
-      /* border: 2px solid green; */
-      margin: 0em;
-      padding: 2.5em;
-     }
+@media screen and (min-width: 767px) and (max-width: 991px){
+  section.header{
+    /* border: 2px solid red; */
+    margin-top: 5.5em;
+    margin-bottom: 2.0em;
+    padding: .5em 2em;
 
-  }
-  /* Media query for Medium large */
-  @media (max-width: 1026px) {
-     
-    .navbar{
-      margin: 0rem .5em;
-      padding: 0em !important;
-      /* border: 2px solid red; */
-      align-items: baseline !important;
-      background-color: white !important;
-      /* z-index: -1; */
-      
-    }
-     
-     .logo{
-      font-size: 1.8em;
-      margin: .1em 0em .1em 0em;
-       /* border: 2px solid red; */
-     }
-  
-     /* header */
-  
-     section.header{
-      /* border: 2px solid red; */
-      margin-top: 6.5em;
-      margin-bottom: 4.5em;
-      padding: .5em 2em;
-  
-     }
-     section.header h2{
-      font-size: 2.5em;
-      text-align: center;
-     }
-     section.header p{
-      text-align: center;
-      font-size: .95em;
-     }
-  
-   
-     .download{
-      padding: 0em 8em;
-      margin-top: 2.5em !important;
-      margin-bottom: 0em !important;
-      /* border: 2px solid red; */
-      
-     }
-     .download button{
-      margin: .5em .1em;
-     }
-  
-     /* guide section */
-  
-     section.guide{
-      padding: 2em;
-      margin: 0em;
-      
-     }
-     aside.steps{
-      /* border: green 2px solid; */
-      font-size: .8rem;
-      margin: 2em;
-     }
-     aside.steps h6{
-      font-size: .8rem;
-     }
-     aside.guide-image{
-      /* border: green 2px solid; */
-      margin: 0em;
-      height: 300px;
-     }
+   }
+   section.header h2{
+    font-size: 2.5em;
+    /* text-align: left; */
+   }
+   section.header p{
+    /* text-align: left; */
+    font-size: .9em;
+   }
+
+   .sm{
+    display: block;
+   }
+   .download{
+    padding: 0em 12em  ;
+    margin-top: 2.5em !important;
+    margin-bottom: 0em !important;
+    /* border: 2px solid red; */
     
-     /* dev section */
-     section.dev{
-      margin: 1.5em 0em;
-      padding: 2em;
-     }
+   }
+   .download button{
+    margin: .5em .1em;
+   }
+
+   /* guide section */
+
+   section.guide{
+    padding: 2em;
+    margin: 0em;
+   }
+   aside.steps{
+    /* border: green 2px solid; */
+    margin: 2em;
+    font-size: .8em;
+   }
+   aside.guide-image{
+    /* border: green 2px solid; */
+    margin: 0em;
+    height: 300px;
+   }
   
-     section.dev .dev-hero-text{
-      font-size: .8em;
-      margin-bottom: 1.5em;
-     }
-  
-     /* footer */
-     footer{
-      margin: 0em;
-      padding: 2em;
-     }
-  
-     footer .about{
-      /* border: 2px solid green; */
-      margin: 0em;
-      padding: 2.5em;
-     }
-    }
+   /* dev section */
+   section.dev{
+    margin: 1.5em 0em;
+    padding: 2em;
+   }
+
+   section.dev .dev-hero-text{
+    font-size: .8em;
+    margin-bottom: 1.5em;
+   }
+
+   /* footer */
+   footer{
+    margin: 0em;
+    padding: 2em 10em;
+   }
+   footer .sm{
+    display: none;
+   }
+   footer .about{
+    /* border: 2px solid green; */
+    margin: 0em;
+    padding: 2.5em;
+    color: lightgrey;
+   }
+}
+  /* Media query for Medium large */
+@media screen and (min-width: 991px){
+
+.download{
+  justify-content: center !important;
+ padding: 0em 2em  ;
+ margin-top: 2.5em !important;
+ margin-bottom: 0em !important;
+ /* border: 2px solid red; */
+ 
+}
+.download button{
+ margin: .5em .8em;
+ max-width: 200px !important;
+}
+}
