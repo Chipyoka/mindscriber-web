@@ -46,7 +46,7 @@ Once installed, follow these steps to get started with **Mindscriber**:
 
 ## Support
 
-If you encounter any issues or have any questions, please visit our contact us at blackgeek@gmail.com.
+If you encounter any issues or have any questions, please visit our contact us at mwapechipyoka18@gmail.com.
 
 ## License
 
