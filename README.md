@@ -25,9 +25,7 @@ Before downloading, please ensure your system meets the following requirements:
 
 To download **Mindscriber**, click the button below:
 
-[Download Button]
-
-_(This button will initiate the download of the .exe file)_
+[Download Button](https://github.com/Chipyoka/mindscriber-app/releases/download/v1.0.0/Mindscriber-1.0.0.Setup.exe)
 
 ## Installation Instructions
 
