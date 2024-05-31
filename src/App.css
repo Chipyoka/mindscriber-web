@@ -84,10 +84,12 @@ code{
   font-size: .75em;
   color: white;
   padding: .5em;
+  margin-bottom: 0em;
 }
 
 .top-bg{
   background: linear-gradient(to right, #00ff62,#3a7bd5, #3a7bd5);
+  margin-bottom: 0em;
 }
 
 .logo{
@@ -101,7 +103,18 @@ code{
   margin-right: .5em;
 }
 
+div.navi{
+  background-color:rgb(247, 249, 255);
+  padding: 0em 5em;
+  border-bottom: solid thin lightgray;
+  margin-top: 0em;
+}
+
 /* Header */
+.header-header{
+    background: url("components/bg-image-i.svg") 0 0 no-repeat;
+    /* background-color: #3a7bd5 !important; */
+}
 section.header{
   margin-top: 8em;
   margin-bottom: 5em;
@@ -221,6 +234,7 @@ footer {
   padding: 3em 1em;
   background-color: grey;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .salute{
@@ -291,7 +305,12 @@ div.nav-link ul>li button:hover{
    }
 
    /* header */
-
+   div.navi{
+    background-color:rgb(247, 249, 255);
+    padding: .5em 1.5em;
+    border-bottom: solid thin lightgray;
+    margin-top: 0em;
+  }
    section.header{
     /* border: 2px solid red; */
     margin-top: 5em;
@@ -374,9 +393,11 @@ div.nav-link ul>li button:hover{
     margin-bottom: 2.0em;
     padding: .5em 2em;
 
+
    }
    section.header h2{
     font-size: 2.5em;
+  
    }
    section.header p{
     font-size: .9em;
@@ -387,7 +408,7 @@ div.nav-link ul>li button:hover{
    }
 
    .lg{
-    display: block;
+    display: none;
    }
    .download{
     padding: 0em 12em  ;

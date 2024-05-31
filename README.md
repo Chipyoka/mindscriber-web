@@ -1,4 +1,4 @@
-# Welcome to Mindscriber's Official Website
+# Mindscriber's Official Website
 
 ## Overview
 

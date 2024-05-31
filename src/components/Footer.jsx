@@ -11,6 +11,11 @@ function Footer() {
 	const formattedYear = new Date();
 	const currentYear = formatYear(formattedYear);
 
+	// Function to handle the redirect
+	const handleDocRedirect = () => {
+		const readMeUrl = "https://github.com/Chipyoka/mindscriber-app/tree/v1.0.0";
+		window.open(readMeUrl, "_blank");
+	};
 	return (
 		<>
 			<footer className="container-fluid">
@@ -20,13 +25,16 @@ function Footer() {
 							<span className="salute">MINDSCRIBER</span>
 							<br />A note taking desktop application that allows users to take notes and
 							save for later.
-							<br />
-							Happy Note Taking !
 						</p>
+						<p>
+							As documentation, Check out the <code>README</code> file on the Git
+							repository.
+						</p>
+						<p>Happy Note Taking !</p>
 						<div className="nav-link">
 							<ul>
 								<li>
-									<button>Documentaion</button>
+									<button onClick={handleDocRedirect}>Documentaion</button>
 								</li>
 							</ul>
 						</div>

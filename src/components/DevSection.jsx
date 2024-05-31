@@ -1,6 +1,11 @@
 import React from "react";
 
 function DevSection() {
+	// Function to handle the redirect
+	const handleCollaboRedirect = () => {
+		const collaboUrl = "https://github.com/Chipyoka/mindscriber-app";
+		window.open(collaboUrl, "_blank");
+	};
 	return (
 		<>
 			<div className="container">
@@ -10,13 +15,15 @@ function DevSection() {
 					</aside>
 					<aside className=" dev-text col-sm-5">
 						<p>
-							Mindscriber is an ongoing project which started as a passion project in
-							order to get conversant with ElectronJs in building desktop
-							applications. We need your technical expertise to make it better.
+							Mindscriber is an ongoing project which started as a passion project in order
+							to get conversant with ElectronJs in building desktop applications. We need
+							your technical expertise to make it better.
 						</p>
 
 						<div>
-							<button className="btn btn-success">Become A Collaborator</button>
+							<button className="btn btn-success" onClick={handleCollaboRedirect}>
+								Become A Collaborator
+							</button>
 						</div>
 					</aside>
 				</section>

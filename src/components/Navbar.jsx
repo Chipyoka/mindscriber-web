@@ -25,28 +25,38 @@ function Navbar() {
 		return () => clearInterval(interval);
 	}, []);
 
+	// Function to handle the redirect
+	const handleGitRedirect = () => {
+		const gitUrl = "https://github.com/Chipyoka/mindscriber-app/tree/v1.0.0";
+		window.open(gitUrl, "_blank");
+	};
+	// Function to handle the redirect
+	const handleLinkedInRedirect = () => {
+		const linkedInUrl = "https://www.linkedin.com/in/chipyoka-mwape-8b897623b";
+		window.open(linkedInUrl, "_blank");
+	};
 	return (
 		<>
-			<div className="top-bg ">
+			<div className="container-fluid top-bg ">
 				<p className="top-line">{topText}</p>
 			</div>
-			<div className="container">
+			<div className="container-fluid navi">
 				<div className="navbar sticky-top">
 					<div>
 						<span className="logo">Mindscriber</span>
 					</div>
 					<div>
 						<span className="btn btn-outline-primary version">V 1.0.0 (Current)</span>
-						<button className="btn btn-outline-primary git">
+						<button className="btn btn-outline-primary git" onClick={handleGitRedirect}>
 							<img src={Git} alt="" />
 						</button>
-						<button className="btn btn-outline-primary x">
+						<button className="btn btn-outline-primary x" onClick={handleLinkedInRedirect}>
 							<img src={LinkedIn} alt="" />
 						</button>
 					</div>
 				</div>
 			</div>
-			<hr />
+			{/* <hr /> */}
 		</>
 	);
 }
