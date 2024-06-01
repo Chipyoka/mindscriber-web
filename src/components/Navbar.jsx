@@ -9,7 +9,7 @@ function Navbar() {
 		const interval = setInterval(() => {
 			//Array of animated toptexts
 			const texts = [
-				"Installer for MacOS and Linux comming soon...",
+				"Installer for MacOS and Linux coming soon...",
 				"Developed by The Blackgeek...",
 				"This project will become Open-source soon...",
 				"You can become a collaborator...",
